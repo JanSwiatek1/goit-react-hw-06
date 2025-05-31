@@ -1,0 +1,21 @@
+.button{
+    background-color: aqua;
+    padding: 10px;
+    
+}
+
+.item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+.data{
+    display:block;
+    list-style: none;
+}
