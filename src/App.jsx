@@ -1,16 +1,16 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './redux/store';
-import ContactForm from './components/ContactForm/ContactForm';
-import SearchBox from './components/SearchBox/SearchBox';
-import ContactList from './components/ContactList/ContactList';
-import css from './App.module.css';
+import { ContactForm } from './components/contactForm/contactForm';
+import SearchBox from './components/searchBox/SearchBox';
+import ContactList from './components/contactList/ContactList';
+
 
 export default function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <div className={css.container}>
+        <div>
           <h1>Phonebook</h1>
           <ContactForm />
           <SearchBox />
